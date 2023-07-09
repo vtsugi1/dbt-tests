@@ -10,3 +10,5 @@ models:
         tests:
           - unique
           - not_null
+          - dbt_utils.expression_is_true:
+              expression: "TRY_CAST(refresh_date AS VARCHAR) IS NOT NULL"
