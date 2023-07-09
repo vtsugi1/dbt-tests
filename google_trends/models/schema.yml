@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: top_terms_brazil_sp
+    description: "Top Google Trends terms in SP Brazil"
+    columns:
+      - name: score
+        description: "Term score"
+        tests:
+          - unique
+          - not_null
